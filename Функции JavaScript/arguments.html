@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Использование объекта arguments</title>
+    </head>
+    <body>
+        <script>
+            function myConcat(separator) {
+                var result = "";
+                var i;
+                for (i = 1; i < arguments.length; i++) {
+                    result += arguments[i] + separator;
+                }
+                return result;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Несколько уровней вложенности функций</title>
+    </head>
+    <body>
+        <script>
+            function A(x) {
+                function B(y) {
+                    function C(z) {
+                        console.log(x + y + z);
+                    }
+                    C(3);
+                }
+                B(2);
+            }
+            A(1);
+        </script>
+    </body>
+</html>

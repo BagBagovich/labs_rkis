@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Поведение стека</title>
+    </head>
+    <body>
+        <script>
+            function foo(i) {
+            if (i < 0) return;
+            console.log("begin: " + i);
+            foo(i - 1);
+            console.log("end: " + i);
+            }
+            foo(3);
+        </script>
+    </body>
+</html>

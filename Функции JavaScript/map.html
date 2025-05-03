@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Функция map</title>
+    </head>
+    <body>
+        <script>
+            function map(f, a) {
+                var result = [], i;
+                for (i = 0; i != a.length; i++) result[i] = f(a[i]);
+                return result;
+            }
+            var f = function (x) {
+                return x * x * x;
+            };
+            var numbers = [0, 1, 2, 5, 10];
+            var cube = map(f, numbers);
+        </script>
+    </body>
+</html>

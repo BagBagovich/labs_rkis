@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Поведение стека</title>
+    </head>
+    <body>
+        <script>
+            function addSquares(a, b) {
+            function square(x) {
+            return x * x;
+            }
+            return square(a) + square(b);
+            }
+            a = addSquares(2, 3);
+            b = addSquares(3, 4);
+            c = addSquares(4, 5);
+        </script>
+    </body>
+</html>

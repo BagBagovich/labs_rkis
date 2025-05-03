@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Использование объекта arguments</title>
+    </head>
+    <body>
+        <script>
+            function Person() {
+                var self = this;
+
+                self.age = 0;
+                
+                setInterval(function growUp() {
+                    self.age++;
+                }, 1000);
+            }
+        </script>
+    </body>
+</html>
